@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        bat 'python3 --version'
+        bat 'javac Hello.java'
       }
     }
     stage('hello') {
       steps {
-        bat 'python3 Hello.py'
+        bat 'java Hello'
       }
     }
   }
